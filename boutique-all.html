@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <title>All boutiques</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/coda-slider-2.0.css">  
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/media.css">
+  
+
+  <!-- Custom Modernizr for Foundation -->
+  <script src="js/modernizr.foundation.js"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'af,sq,ar,bg,ca,zh-CN,zh-TW,hr,cs,da,nl,et,en,tl,fi,fr,de,el,iw,hi,hu,is,id,ga,it,ja,ko,lv,lt,mk,ms,mt,no,fa,pl,pt,ro,ru,sr,sk,sl,es,sw,sv,th,tr,uk,vi,cy',
+            autoDisplay: false,
+            gaTrack: true,
+            gaId: 'UA-1005942-22',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  
+</head>
+
+<body>
+<!-- Facebook like script -->
+<div id="fb-root"></div>
+<script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_US/all.js#xfbml=1";fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));</script>
+  
+  <!-- Page Layout HTML here -->
+<!-- Page Header Section -->
+<div id="pg_wrapper">
+<div class="row">
+<div id="pg_header" class="twelve columns">
+<div class="row">
+  <div class="three columns text-center">
+    <a id="logo" href="./" title="Back to the Home Page">SPOTTY&nbsp;MARKET -The&nbsp;Shoe&nbsp;Marketplace-</a>
+  </div>   
+  <div class="five columns mobile-ph">&nbsp;</div>
+  <div class="two columns mobile-two">
+    <div class="twelve columns mobile-hide">
+           &nbsp;
+    </div>
+    <div class="button custom dropdown currency">
+    <span id="currency-dropdown">
+      <span class="title">US&nbsp;Dollars&nbsp;-&nbsp;USD </span>
+      <span class="arrow"></span>
+    </span>
+    
+    <ul>
+        <h3>Choose Currency:</h3>      
+         <li><a href="#" data-ga-label="New currency - Australian Dollar - AUD" data-ga-action="Change" data-ga-category="Currency picker" class="aud currency-select">Australian Dollar - AUD</a></li>
+         <li><a href="#" data-ga-label="New currency - Canadian Dollar - CAD" data-ga-action="Change" data-ga-category="Currency picker" class="cad currency-select">Canadian Dollar - CAD</a></li>
+         <li><a href="#" data-ga-label="New currency - Chinese Yuan - RMB" data-ga-action="Change" data-ga-category="Currency picker" class="rmb currency-select">Chinese Yuan - RMB</a></li>
+         <li><a href="#" data-ga-label="New currency - Danish Kroner - DKK" data-ga-action="Change" data-ga-category="Currency picker" class="dkk currency-select">Danish Kroner - DKK</a></li>
+         <li><a href="#" data-ga-label="New currency - Euro - EUR" data-ga-action="Change" data-ga-category="Currency picker" class="eur currency-select">Euro - EUR</a></li>
+         <li><a href="#" data-ga-label="New currency - Norwegian Kroner - NOK" data-ga-action="Change" data-ga-category="Currency picker" class="nok currency-select">Norwegian Kroner - NOK</a></li>
+         <li><a href="#" data-ga-label="New currency - Russian Rouble - RUB" data-ga-action="Change" data-ga-category="Currency picker" class="rub currency-select">Russian Rouble - RUB</a></li>
+         <li><a href="#" data-ga-label="New currency - Swedish Kronor - SEK" data-ga-action="Change" data-ga-category="Currency picker" class="sek currency-select">Swedish Kronor - SEK</a></li>
+         <li><a href="#" data-ga-label="New currency - UK Pounds - GBP" data-ga-action="Change" data-ga-category="Currency picker" class="gbp currency-select">UK Pounds - GBP</a></li>
+         <li><a href="#" data-ga-label="New currency - US Dollars - USD" data-ga-action="Change" data-ga-category="Currency picker" class="usd currency-select">US Dollars - USD</a></li>
+         <h3 class="translate-title">Choose Language:</h3>
+         <div id="google_translate_element"></div>         
+      </ul>
+    </div>
+  </div>    
+  <div class="two columns mobile-two">
+      <div class="twelve columns">
+          &nbsp;
+      </div>
+      <div class="bot">
+        <a href="" class="button">What&nbsp;is&nbsp;SpottyMarket?</a>
+      </div>
+      <div class="twelve columns">
+        &nbsp;
+      </div>
+    </div> 
+</div>     
+</div>
+<!-- End Page Nav Section -->
+</div>
+<!-- Page Nav Section -->
+<div id="pg_menu_wrapper">
+<div id="top_menu" class="row">
+    <div class="six columns mobile-three">
+        <ul class="nav-bar">
+              <li class="two columns"><a href="#">Women</a></li>
+                <li class="two columns has-flyout">
+                  <a href="#">Men</a>
+                  
+                  <div class="flyout large">
+                    <div class="row has-children">
+                            <div class="six columns">
+                              
+                              <div class="row">
+                                <span class="title">BROWSE BY ITEM</span>
+                                  <div class="subitems hide-for-xsmall">
+                                    <div class="six columns">
+                                        <a href="#">New In</a>
+                                        <a href="#">Live Boutique Feed </a>
+                                        <a href="#">Sale</a>
+                                        <br />
+                                        
+                                        <a href="#">Accessories</a>
+                                        <a href="#">Coats & Jackets</a>
+                                        <a href="#">Hats & Caps</a>
+                                        <a href="#">Hoodies & Sweatshirts</a>
+                                        <a href="#">Jeans</a>
+                                        <a href="#">Jumpers & Cardigans</a>
+                                    </div>
+                                    <div class="six columns">
+                                        <a href="#">Shoes</a>
+                                        <a href="#">Suits & Blazers</a>
+                                        <a href="#">T-Shirts</a>
+                                        <a href="#">Trousers & Shorts</a>
+                                        <a href="#">Tops & Polos</a>
+
+                                    </div>
+                                  </div>                              
+                              </div>
+                            </div>
+                        
+                            <div class="three columns has-border">
+
+                              <span class="title">OUR EDITS</span>
+                                <div class="subitems hide-for-xsmall">
+                                  <a href="#">Hit Refresh</a>
+                                  <a href="#">Bombers</a>
+                                  <a href="#">Vintage Denim</a>
+                                  <a href="#">Parkas</a>
+                                </div>
+                            </div>
+                            <div class="three columns has-border">
+                                <span class="title">TOP BRANDS</span>
+                                <div class="subitems hide-for-xsmall">
+                                    <a href="#">ASOS</a>
+                                    <a href="#">Adidas</a>
+                                    <a href="#">All Saints</a>
+                                    <a href="#">Diesel</a>
+                                    <a href="#">Dr Martens</a>
+                                    <a href="#">Nike</a>
+                                    <a href="#">Ralph Lauren</a>
+                                    <a href="#">Wrangler</a>
+                                </div>
+                            </div>                        
+                        </div>
+                  </div>
+                
+                </li>
+                <li class="two columns"><a href="#">Boutiques</a></li>
+                <li class="two columns"><a href="#">Sell</a></li>
+                <li class="two columns"><a href="#">Explore</a></li>
+                <li class="two columns"><a href="#">Community</a></li>
+          </ul>
+    </div>
+    <div class="two columns"></div>
+    <div class="four columns mobile-one">
+      <div class="row search">
+        <form method="post" action="">
+        <div class="eight columns">
+            <input type="text" placeholder="Search from thousands of products..." />
+            <input type="hidden" name="filter" />
+        </div>
+        <div class="four columns">
+        <div class="right button custom dropdown">
+          <span class="title">All products</span>
+          <ul>
+            <li>All products</li>
+            <li>Men products</li>
+            <li>Woman products</li>
+            <li>Boutiques</li>
+          </ul>
+          <input type="button" id="search-btn" />
+          </div>
+        </div>
+        </form>
+        
+      </div>
+    </div>    
+</div>  
+</div>
+<!-- End Page Nave Section -->
+
+<!--  Shop Nav Section -->
+<div id="pg_ws_menu_wrapper">
+<div class="row">
+  <div class="one columns">
+    <fb:like href="http://www.facebook.com/pages/Spotty-Market/102563885113" send="false" layout="button_count" width="50" show_faces="false" font="arial"></fb:like>
+  </div>
+  <div class="six columns mobile-ph"></div>
+  <div class="six columns">
+      <ul  class="nav-bar">
+            <li class="two columns empty hide-for-small">&nbsp;</li>
+              <li class="two columns"><a href="#">Sign in</a></li>
+              <li class="two columns"><a href="#">Sign up</a></li>
+              <li class="two columns"><a href="#">Account</a></li>
+              <li class="two columns"><a href="#">Bag (0)</a></li>
+              <li class="two columns"><a href="#">Favourites (<span id="star-qty">0</span>)</a></li>
+        </ul>
+  </div>
+</div>
+</div>
+<!-- End Shop Nav Section -->
+<div class="row">
+  <div class="ten columns">
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Activity</a></li>
+        <li><a href="#">Last 30 days</a></li>
+      </ul>
+  </div>
+  <div class="two columns">
+    <a id="buyer-protection" href="#" class="top"></a>
+  </div>
+</div>
+
+
+
+
+<!-- Support Button -->
+<a class="one box show-for-large-up feed" href="#" id="support-btn"></a>
+
+<div class="row">
+    <div class="twelve columns">
+        <div class="catHeader-top">
+            <h1>ALL BOUTIQUES</h1>
+            <p>Independent labels, vintage specialists & multi-brand boutiques.</p>
+            <a id="view-world-map" href="boutiques-map.html">View world map</a>
+          </div>  
+          <div class="hr"></div>
+          <div class="catHeader-top bottom">  
+            <div id="breadcrumb-cat">
+              <h3>SHOP BY STYLE: <a href="">Vintage </a> › <a href="">Independent Label</a> › <a href="">Multi Brand</a></h3>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="row">
+  <div class="twelve columns">
+    <h3 class="title main">Promoted Items</h3>
+    <a class="promote-yours" href="">Promote yours>></a>
+    <div class="carousel-pagination">
+      <a href="#" class="prev" id="boutiques-prev">Prev</a>
+      <a href="#" class="next" id="boutiques-next">Next</a>
+  </div>    
+  </div>
+</div>
+
+
+<div id="promoted-feed-items" class="row">
+ 
+  <div id="featuredContent">
+
+  <div class="first">
+        <div class="feed-item three">
+            <div class="feed-item-inner">
+                <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+                <div class="feed-info-box">
+                    <span class="title">TUSC BOUTIQUE</span>
+                    <span class="country us">USA</span>
+                    <div class="more-info">
+                        <a href="#" class="follow">Follow</a>
+                        <a href="#" class="collection">Collection</a>
+                        <a href="#" class="about">About</a>
+                        <div class="about-info">
+                            <p><strong>AUTUMNBABY</strong> | <span>Everything and anything you may ever want; sourced with Love.</span></p>
+
+                            <p>AutumnBaby is your very own online destination for quality unique items sourced all around the world for variation and inspiration. Our collection is lovingly handpicked and contains a mixture of everything and anything unique, fashionable and beautifully detailed little pieces. ♡ Life is like a musical piece, some are: jumpy, happy, sad, and gloomy - but they all have one thing in common. Every piece is unique and beautifully pieced together. Have a Happy Today</p>
+                            <hr>
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feed-item three">
+            <div class="feed-item-inner">
+                <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+                <div class="feed-info-box">
+                    <span class="title">TUSC BOUTIQUE</span>
+                    <span class="country us">USA</span>
+                    <div class="more-info">
+                        <a href="#" class="follow">Follow</a>
+                        <a href="#" class="collection">Collection</a>
+                        <a href="#" class="about">About</a>
+                        <div class="about-info">
+                            <p><strong>AUTUMNBABY</strong> | <span>Everything and anything you may ever want; sourced with Love.</span></p>
+
+                            <p>AutumnBaby is your very own online destination for quality unique items sourced all around the world for variation and inspiration. Our collection is lovingly handpicked and contains a mixture of everything and anything unique, fashionable and beautifully detailed little pieces. ♡ Life is like a musical piece, some are: jumpy, happy, sad, and gloomy - but they all have one thing in common. Every piece is unique and beautifully pieced together. Have a Happy Today</p>
+                            <hr>
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feed-item three">
+            <div class="feed-item-inner">
+                <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+                <div class="feed-info-box">
+                    <span class="title">TUSC BOUTIQUE</span>
+                    <span class="country us">USA</span>
+                    <div class="more-info">
+                        <a href="#" class="follow">Follow</a>
+                        <a href="#" class="collection">Collection</a>
+                        <a href="#" class="about">About</a>
+                        <div class="about-info">
+                            <p><strong>AUTUMNBABY</strong> | <span>Everything and anything you may ever want; sourced with Love.</span></p>
+
+                            <p>AutumnBaby is your very own online destination for quality unique items sourced all around the world for variation and inspiration. Our collection is lovingly handpicked and contains a mixture of everything and anything unique, fashionable and beautifully detailed little pieces. ♡ Life is like a musical piece, some are: jumpy, happy, sad, and gloomy - but they all have one thing in common. Every piece is unique and beautifully pieced together. Have a Happy Today</p>
+                            <hr>
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feed-item three">
+            <div class="feed-item-inner">
+                <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+                <div class="feed-info-box">
+                    <span class="title">TUSC BOUTIQUE</span>
+                    <span class="country us">USA</span>
+                    <div class="more-info">
+                        <a href="#" class="follow">Follow</a>
+                        <a href="#" class="collection">Collection</a>
+                        <a href="#" class="about">About</a>
+                        <div class="about-info">
+                            <p><strong>AUTUMNBABY</strong> | <span>Everything and anything you may ever want; sourced with Love.</span></p>
+
+                            <p>AutumnBaby is your very own online destination for quality unique items sourced all around the world for variation and inspiration. Our collection is lovingly handpicked and contains a mixture of everything and anything unique, fashionable and beautifully detailed little pieces. ♡ Life is like a musical piece, some are: jumpy, happy, sad, and gloomy - but they all have one thing in common. Every piece is unique and beautifully pieced together. Have a Happy Today</p>
+                            <hr>
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>                        
+
+  </div>
+  <div class="sec">
+        <div class="feed-item three">
+            <div class="feed-item-inner">
+                <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+                <div class="feed-info-box">
+                    <span class="title">TUSC BOUTIQUE</span>
+                    <span class="country us">USA</span>
+                    <div class="more-info">
+                        <a href="#" class="follow">Follow</a>
+                        <a href="#" class="collection">Collection</a>
+                        <a href="#" class="about">About</a>
+                        <div class="about-info">
+                            <p><strong>AUTUMNBABY</strong> | <span>Everything and anything you may ever want; sourced with Love.</span></p>
+
+                            <p>AutumnBaby is your very own online destination for quality unique items sourced all around the world for variation and inspiration. Our collection is lovingly handpicked and contains a mixture of everything and anything unique, fashionable and beautifully detailed little pieces. ♡ Life is like a musical piece, some are: jumpy, happy, sad, and gloomy - but they all have one thing in common. Every piece is unique and beautifully pieced together. Have a Happy Today</p>
+                            <hr>
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feed-item three">
+            <div class="feed-item-inner">
+                <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+                <div class="feed-info-box">
+                    <span class="title">TUSC BOUTIQUE</span>
+                    <span class="country us">USA</span>
+                    <div class="more-info">
+                        <a href="#" class="follow">Follow</a>
+                        <a href="#" class="collection">Collection</a>
+                        <a href="#" class="about">About</a>
+                        <div class="about-info">
+                            <p><strong>AUTUMNBABY</strong> | <span>Everything and anything you may ever want; sourced with Love.</span></p>
+
+                            <p>AutumnBaby is your very own online destination for quality unique items sourced all around the world for variation and inspiration. Our collection is lovingly handpicked and contains a mixture of everything and anything unique, fashionable and beautifully detailed little pieces. ♡ Life is like a musical piece, some are: jumpy, happy, sad, and gloomy - but they all have one thing in common. Every piece is unique and beautifully pieced together. Have a Happy Today</p>
+                            <hr>
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feed-item three">
+            <div class="feed-item-inner">
+                <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+                <div class="feed-info-box">
+                    <span class="title">TUSC BOUTIQUE</span>
+                    <span class="country us">USA</span>
+                    <div class="more-info">
+                        <a href="#" class="follow">Follow</a>
+                        <a href="#" class="collection">Collection</a>
+                        <a href="#" class="about">About</a>
+                        <div class="about-info">
+                            <p><strong>AUTUMNBABY</strong> | <span>Everything and anything you may ever want; sourced with Love.</span></p>
+
+                            <p>AutumnBaby is your very own online destination for quality unique items sourced all around the world for variation and inspiration. Our collection is lovingly handpicked and contains a mixture of everything and anything unique, fashionable and beautifully detailed little pieces. ♡ Life is like a musical piece, some are: jumpy, happy, sad, and gloomy - but they all have one thing in common. Every piece is unique and beautifully pieced together. Have a Happy Today</p>
+                            <hr>
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feed-item three">
+            <div class="feed-item-inner">
+                <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+                <div class="feed-info-box">
+                    <span class="title">TUSC BOUTIQUE</span>
+                    <span class="country us">USA</span>
+                    <div class="more-info">
+                        <a href="#" class="follow">Follow</a>
+                        <a href="#" class="collection">Collection</a>
+                        <a href="#" class="about">About</a>
+                        <div class="about-info">
+                            <p><strong>AUTUMNBABY</strong> | <span>Everything and anything you may ever want; sourced with Love.</span></p>
+
+                            <p>AutumnBaby is your very own online destination for quality unique items sourced all around the world for variation and inspiration. Our collection is lovingly handpicked and contains a mixture of everything and anything unique, fashionable and beautifully detailed little pieces. ♡ Life is like a musical piece, some are: jumpy, happy, sad, and gloomy - but they all have one thing in common. Every piece is unique and beautifully pieced together. Have a Happy Today</p>
+                            <hr>
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>                        
+  </div>
+</div>
+
+
+ </div>
+
+<div class="row">
+    <div class="twelve columns">
+        <div class="hr"></div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="pagination-bottom-nav top">    
+    <div class="four columns">
+      <div class="pagi-info">1 - 48 of 303  <a href="">View | 100 per page</a></div>
+    </div>
+    <div class="one columns"></div>
+    <div class="four columns">
+      <div class="boutique-facets">
+        <h2>Refine </h2>
+            <div class="facet bgender expandable open">
+                <div class="content">
+              <ul>
+                  <li>
+                      <a rel="nofollow" href="">Male</a>
+                  </li>
+                  <li>
+                      <a rel="nofollow" href="">Woman</a>
+                  </li>
+              </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+       <div class="three columns short-selecter">
+        <span class="sort-by">Sort by</span>
+        <select id="short-by-select">
+          <option>Most followed - 30 days</option>
+        </select>               
+      </div>    
+  </div>
+</div>
+
+<!-- My Feed List Section -->
+<div id="feed-procucts-list" class="row">
+  <div class="feed-item three">
+      <div class="feed-item-inner">
+          <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+          <div class="feed-info-box">
+              <span class="title">TUSC BOUTIQUE</span>
+              <span class="country us">USA</span>
+              <div class="more-info">
+                  <a href="#" class="follow">Follow</a>
+                  <a href="#" class="collection">Collection</a>
+                  <a href="#" class="about">About</a>
+                  <div class="about-info">
+                      <p><strong>AUTUMNBABY</strong> | <span>Everything and anything you may ever want; sourced with Love.</span></p>
+
+                      <p>AutumnBaby is your very own online destination for quality unique items sourced all around the world for variation and inspiration. Our collection is lovingly handpicked and contains a mixture of everything and anything unique, fashionable and beautifully detailed little pieces. ♡ Life is like a musical piece, some are: jumpy, happy, sad, and gloomy - but they all have one thing in common. Every piece is unique and beautifully pieced together. Have a Happy Today</p>
+                      <hr>
+
+                  </div>
+                  <div class="clear"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="feed-item three">
+      <div class="feed-item-inner">
+          <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+          <div class="feed-info-box">
+              <span class="title">TUSC BOUTIQUE</span>
+              <span class="country us">USA</span>
+              <div class="more-info">
+                  <a href="#" class="follow">Follow</a>
+                  <a href="#" class="collection">Collection</a>
+                  <a href="#" class="about">About</a>
+                  <div class="about-info">
+                      <p><strong>AUTUMNBABY</strong> | <span>Everything and anything you may ever want; sourced with Love.</span></p>
+
+                      <p>AutumnBaby is your very own online destination for quality unique items sourced all around the world for variation and inspiration. Our collection is lovingly handpicked and contains a mixture of everything and anything unique, fashionable and beautifully detailed little pieces. ♡ Life is like a musical piece, some are: jumpy, happy, sad, and gloomy - but they all have one thing in common. Every piece is unique and beautifully pieced together. Have a Happy Today</p>
+                      <hr>
+
+                  </div>                  
+                  <div class="clear"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="feed-item three">
+      <div class="feed-item-inner">
+          <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+          <div class="feed-info-box">
+              <span class="title">TUSC BOUTIQUE</span>
+              <span class="country us">USA</span>
+              <div class="more-info">
+                  <a href="#" class="follow">Follow</a>
+                  <a href="#" class="collection">Collection</a>
+                  <a href="#" class="about">About</a>
+                  <div class="clear"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="feed-item three">
+      <div class="feed-item-inner">
+          <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+          <div class="feed-info-box">
+              <span class="title">TUSC BOUTIQUE</span>
+              <span class="country us">USA</span>
+              <div class="more-info">
+                  <a href="#" class="follow">Follow</a>
+                  <a href="#" class="collection">Collection</a>
+                  <a href="#" class="about">About</a>
+                  <div class="clear"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="feed-item three">
+      <div class="feed-item-inner">
+          <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+          <div class="feed-info-box">
+              <span class="title">TUSC BOUTIQUE</span>
+              <span class="country us">USA</span>
+              <div class="more-info">
+                  <a href="#" class="follow">Follow</a>
+                  <a href="#" class="collection">Collection</a>
+                  <a href="#" class="about">About</a>
+                  <div class="clear"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="feed-item three">
+      <div class="feed-item-inner">
+          <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+          <div class="feed-info-box">
+              <span class="title">TUSC BOUTIQUE</span>
+              <span class="country us">USA</span>
+              <div class="more-info">
+                  <a href="#" class="follow">Follow</a>
+                  <a href="#" class="collection">Collection</a>
+                  <a href="#" class="about">About</a>
+                  <div class="clear"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="feed-item three">
+      <div class="feed-item-inner">
+          <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+          <div class="feed-info-box">
+              <span class="title">TUSC BOUTIQUE</span>
+              <span class="country us">USA</span>
+              <div class="more-info">
+                  <a href="#" class="follow">Follow</a>
+                  <a href="#" class="collection">Collection</a>
+                  <a href="#" class="about">About</a>
+                  <div class="clear"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="feed-item three">
+      <div class="feed-item-inner">
+          <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+          <div class="feed-info-box">
+              <span class="title">TUSC BOUTIQUE</span>
+              <span class="country us">USA</span>
+              <div class="more-info">
+                  <a href="#" class="follow">Follow</a>
+                  <a href="#" class="collection">Collection</a>
+                  <a href="#" class="about">About</a>
+                  <div class="clear"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="hide-for-medium">
+  <div class="feed-item three">
+      <div class="feed-item-inner">
+          <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+          <div class="feed-info-box">
+              <span class="title">TUSC BOUTIQUE</span>
+              <span class="country us">USA</span>
+              <div class="more-info">
+                  <a href="#" class="follow">Follow</a>
+                  <a href="#" class="collection">Collection</a>
+                  <a href="#" class="about">About</a>
+                  <div class="about-info">
+                      <p><strong>AUTUMNBABY</strong> | <span>Everything and anything you may ever want; sourced with Love.</span></p>
+
+                      <p>AutumnBaby is your very own online destination for quality unique items sourced all around the world for variation and inspiration. Our collection is lovingly handpicked and contains a mixture of everything and anything unique, fashionable and beautifully detailed little pieces. ♡ Life is like a musical piece, some are: jumpy, happy, sad, and gloomy - but they all have one thing in common. Every piece is unique and beautifully pieced together. Have a Happy Today</p>
+                      <hr>
+
+                  </div>
+                  <div class="clear"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="feed-item three">
+      <div class="feed-item-inner">
+          <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+          <div class="feed-info-box">
+              <span class="title">TUSC BOUTIQUE</span>
+              <span class="country us">USA</span>
+              <div class="more-info">
+                  <a href="#" class="follow">Follow</a>
+                  <a href="#" class="collection">Collection</a>
+                  <a href="#" class="about">About</a>
+                  <div class="about-info">
+                      <p><strong>AUTUMNBABY</strong> | <span>Everything and anything you may ever want; sourced with Love.</span></p>
+
+                      <p>AutumnBaby is your very own online destination for quality unique items sourced all around the world for variation and inspiration. Our collection is lovingly handpicked and contains a mixture of everything and anything unique, fashionable and beautifully detailed little pieces. ♡ Life is like a musical piece, some are: jumpy, happy, sad, and gloomy - but they all have one thing in common. Every piece is unique and beautifully pieced together. Have a Happy Today</p>
+                      <hr>
+
+                  </div>
+                  <div class="clear"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="feed-item three">
+      <div class="feed-item-inner">
+          <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+          <div class="feed-info-box">
+              <span class="title">TUSC BOUTIQUE</span>
+              <span class="country us">USA</span>
+              <div class="more-info">
+                  <a href="#" class="follow">Follow</a>
+                  <a href="#" class="collection">Collection</a>
+                  <a href="#" class="about">About</a>
+                  <div class="about-info">
+                      <p><strong>AUTUMNBABY</strong> | <span>Everything and anything you may ever want; sourced with Love.</span></p>
+
+                      <p>AutumnBaby is your very own online destination for quality unique items sourced all around the world for variation and inspiration. Our collection is lovingly handpicked and contains a mixture of everything and anything unique, fashionable and beautifully detailed little pieces. ♡ Life is like a musical piece, some are: jumpy, happy, sad, and gloomy - but they all have one thing in common. Every piece is unique and beautifully pieced together. Have a Happy Today</p>
+                      <hr>
+
+                  </div>
+                  <div class="clear"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="feed-item three">
+      <div class="feed-item-inner">
+          <a href="#"><img src="media/pictures/my-feed.jpg" alt="" /></a>
+          <div class="feed-info-box">
+              <span class="title">TUSC BOUTIQUE</span>
+              <span class="country us">USA</span>
+              <div class="more-info">
+                  <a href="#" class="follow">Follow</a>
+                  <a href="#" class="collection">Collection</a>
+                  <a href="#" class="about">About</a>
+                  <div class="about-info">
+                      <p><strong>AUTUMNBABY</strong> | <span>Everything and anything you may ever want; sourced with Love.</span></p>
+
+                      <p>AutumnBaby is your very own online destination for quality unique items sourced all around the world for variation and inspiration. Our collection is lovingly handpicked and contains a mixture of everything and anything unique, fashionable and beautifully detailed little pieces. ♡ Life is like a musical piece, some are: jumpy, happy, sad, and gloomy - but they all have one thing in common. Every piece is unique and beautifully pieced together. Have a Happy Today</p>
+                      <hr>
+
+                  </div>
+                  <div class="clear"></div>
+              </div>
+          </div>
+      </div>
+  </div>  
+  </div>            
+</div>
+<!-- End MY Feed List Section -->
+
+<div class="row">
+<div class="pagination-bottom-nav">    
+  <div class="pagi-info">1 - 48 of 303  <a href="">View | 100 per page</a></div>
+  <div class="pagination-bottom"> <a href=""> 1</a>  <a class="nh">-</a>    <a href="">2</a> <a class="nh">-</a>     <a href="">3</a>    <a class="nh">...</a>      <a href="">7</a>     <a href=""> ></a></div>   
+          
+</div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+  <div class="row">
+    <div class="two columns">
+      <span class="footer-title title">About</span>
+      <ul class="subitems hide-for-small">
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Trust & Safety</a></li>
+        <li><a href="#">Media Centre</a></li>
+        <li><a href="#">Affiliates</a></li>
+      </ul>
+    </div>
+    <div class="two columns">
+      <span class="footer-title title">Buying</span>
+      <ul class="subitems hide-for-small">
+        <li><a href="#">Buyer Protection</a></li>
+        <li><a href="#">Wish list</a></li>
+        <li><a href="#">Buying basics</a></li>
+        <li><a href="#">Spottymarket Spotlight</a></li>
+      </ul>
+    </div>
+    <div class="two columns">
+      <span class="footer-title title">Selling</span>
+      <ul class="subitems hide-for-small">
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">List an item</a></li>
+        <li><a href="#">Apply for a Boutique</a></li>
+        <li><a href="#">Seller Protection</a></li>
+      </ul>
+    </div>
+    <div class="two columns">
+      <span class="footer-title title">Community</span>
+      <ul class="subitems hide-for-small">
+        <li><a href="#">Boutiques</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+    <div class="two columns">
+      <span class="footer-title title">Help</span>
+      <ul class="subitems hide-for-small">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Frequently Asked Questions</a></li>
+        <li><a href="#">Support Community</a></li>
+        <li><a href="#">Partnerships</a></li>
+      </ul>
+    </div>
+    <div class="two columns">
+      <span class="footer-title title">Legal</span>
+      <ul class="subitems hide-for-small">
+        <li><a href="#">Terms&Conditions</a></li>
+        <li><a href="#">Privacy&Cookies</a></li>
+        <li><a href="#">Copyright Policies</a></li>
+        <li><a href="#">Announcements</a></li>
+      </ul>
+    </div>                    
+  </div>
+</footer>
+<div class="row footer-bottom">
+    <div class="six columns">
+        <div class="social">
+        <!-- Twitter -->
+        <a href="https://twitter.com/SpottyMarket" class="twitter-follow-button" data-show-count="false">Follow @SpottyMarket</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>    
+        
+        <!-- Google plus -->
+        <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+        <g:plusone></g:plusone>
+        </div>
+        <!-- Cards -->
+        <div class="cards">
+          <a id="pt" href="#"></a>
+          <a id="visa" href="#"></a>
+          <a id="mc" href="#"></a>
+          <a id="cc" href="#"></a>
+          <a id="payp" href="#"></a>
+        </div>
+    </div>
+    <div class="one columns"></div>
+    <div class="three columns">
+      <a href="#">SIGN IN / </a> 
+      <a href="#">NEWSLETTER SIGN UP</a>
+    </div>
+    <div class="two columns">
+      <a id="bp" href="#"></a>
+      <a class="find-out-more" href="#">Find out more</a>
+    </div> 
+    <div class="clear"></div>   
+</div>
+<div class="twelve columns text-center">
+    <p class="cpyrt">©2012 SPOTTYMARKET.COM all rights reserved</p>
+</div>
+<!-- End Footer -->
+</div>
+
+
+  <!-- [JS Files] -->
+  <script src="js/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <!-- Initialize JS Plugins -->
+
+<script src="js/jquery.cookie.js"></script>
+<script src="js/jquery.foundation.orbit.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
